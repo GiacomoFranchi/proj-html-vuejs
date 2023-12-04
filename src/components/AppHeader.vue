@@ -1,16 +1,18 @@
 <script>
+import NavHeader from './NavHeader.vue';
 import TopHeader from './TopHeader.vue';
 
 export default {
     data() {
         return {};
     },
-    components: { TopHeader }
+    components: { TopHeader, NavHeader }
 }
 </script>
 
 <template>
-<TopHeader />
+    <TopHeader />
+    <NavHeader />
 </template>
 
 <style lang="scss" scoped>

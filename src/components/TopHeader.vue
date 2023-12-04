@@ -9,12 +9,14 @@ export default {
 <template>
     <header>
         <section>
+            <!--Apertura:-->
             <span class="links">
                 <i class="fa-solid fa-clock"></i>
                 <span>
                     Open Hours: Mon-Sat-9:00-18:00 
                 </span>
             </span>
+            <!--Lista link contatti-->
             <ul>
                 <li><a href="">
                     <i class="fa-solid fa-phone"></i>
@@ -45,7 +47,6 @@ header{
         padding: 2px 0;
         color: white;
         @include flex(space-between, center, row);
-
         ul{
             @include flex(space-between, center, row);
             list-style: none;
