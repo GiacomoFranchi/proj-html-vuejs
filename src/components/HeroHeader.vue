@@ -38,16 +38,17 @@ export default {
         h2{
             font-size: 4rem;
             margin-bottom: 1rem;
+            color: rgb(33, 51, 62);
             span{
-                background-color: rgba(5, 130, 131, 0.3);
-                color:rgb(5, 130, 131) ;
-                border-radius: 5px;
-                padding: 0.3rem 0.5rem;
+                @include title-green;
             }
         }
         p{
-            font-size: 2rem;
+            font-size: 1.8rem;
+            width: 80%;
+            margin: 0 auto;
             margin-bottom: 1rem;
+            color: gray;
         }
         div{
             display: flex;

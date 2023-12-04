@@ -1,7 +1,15 @@
 <script>
 export default {
   data() {
-    return {}
+    return {
+        links:[
+            {id:"HOME"},
+            {id:"SERVICES"},
+            {id:"ABOUT"},
+            {id:"PROJECTS"},
+            {id:"RESULTS"},
+    ]
+    }
   }
 }
 </script>
@@ -11,17 +19,11 @@ export default {
         <section class="logo">
             <img src="../assets/img/logo.PNG" alt="Logo NexGen">
         </section>
-        <section>
+        <section class="col-dx">
             <ul>
-                <li><a href="">HOME</a></li>
-                <li><a href="">SERVICES</a></li>
-                <li><a href="">ABOUT</a></li>
-                <li><a href="">PROJECTS</a></li>
-                <li><a href="">RESULTS</a></li>
-                <li>
-                    <button id="btn-touch">GET IN TOUCH</button>
-                </li>
+                <li v-for="link in links"><a href="">{{link.id}}</a></li>
             </ul>
+            <button id="btn-touch">GET IN TOUCH</button>
         </section>
     </header>
 </template>
@@ -42,19 +44,23 @@ header{
             width: 100%;
         }
     }
-    ul{
+    .col-dx{
+        gap: 1rem;
+        @include flex(space-between, center, row);
+        ul{
             @include flex(space-between, center, row);
             list-style: none;
             li{
-                margin: 10px;
+                margin: 8px;
                 a{
                     text-decoration: none;
                     color: black;
                 }
-                button{
-                    @include btn-touch;
-                }
             }
         }
+        button{
+            @include btn-touch;
+        }
+    }
 }
 </style>

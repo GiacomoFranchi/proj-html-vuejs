@@ -1,13 +1,13 @@
 <script>
-import NavHeader from './NavHeader.vue';
-import TopHeader from './TopHeader.vue';
-import HeroHeader from './HeroHeader.vue';
+import NavHeader from './NavHeader.vue' ;
+import TopHeader from  './TopHeader.vue' ;
+import HeroHeader from './HeroHeader.vue' ;
 
 export default {
     data() {
         return {};
     },
-    components: { TopHeader, NavHeader, HeroHeader }
+    components:{NavHeader, HeroHeader, TopHeader }
 }
 </script>
 

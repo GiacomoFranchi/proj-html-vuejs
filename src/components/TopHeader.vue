@@ -1,8 +1,16 @@
 <script>
 export default {
   data() {
-    return {}
-  }
+    return {
+        links:[
+            {id:"+1(305)1234-5678" , class:"fa-solid fa-phone"},
+            {id:"hello@example.com" , class:"fa-solid fa-envelope"},
+            {id:"" , class:"fa-brands fa-facebook-f"},
+            {id:"" , class:"fa-brands fa-x-twitter"},
+            {id:"" , class:"fa-brands fa-linkedin"},
+            ]
+        }
+    }
 }
 </script>
 
@@ -18,17 +26,12 @@ export default {
             </span>
             <!--Lista link contatti-->
             <ul>
-                <li><a href="">
-                    <i class="fa-solid fa-phone"></i>
-                    +1(305)1234-5678
-                </a></li>
-                <li><a href="">
-                    <i class="fa-solid fa-envelope"></i>
-                    hello@example.com
-                </a></li>
-                <li><a href=""><i class="fa-brands fa-facebook-f"></i></a></li>
-                <li><a href=""><i class="fa-brands fa-x-twitter"></i></a></li>
-                <li><a href=""><i class="fa-brands fa-linkedin"></i></a></li>
+                <li v-for="link in links">
+                    <a href="">
+                        <i :class="link.class"></i>
+                        {{ link.id }}
+                    </a>
+                </li>
             </ul>
         </section>
     </header>

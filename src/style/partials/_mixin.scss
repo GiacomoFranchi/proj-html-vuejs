@@ -32,3 +32,10 @@
         border: none;
     }
 }
+
+@mixin title-green{
+    background-color: rgba(5, 130, 131, 0.3);
+    color:rgb(5, 130, 131) ;
+    border-radius: 5px;
+    padding: 0.3rem 0.5rem;
+}
