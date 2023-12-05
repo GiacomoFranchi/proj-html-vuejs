@@ -32,4 +32,26 @@ export const store = reactive({
             parag:"Lorem ipsum dolor sit, amet consectetur adipisicing elit.",
         },
                 ],
+    companys: [
+        {
+            icon:"fa-solid fa-award",
+            title:"Tradition",
+            parag:"Lorem ipsum dolor sit, amet consectetur adipisicing elit.",
+        },
+        {
+            icon:"fa-solid fa-lock",
+            title:"Security",
+            parag:"Lorem ipsum dolor sit, amet consectetur adipisicing elit.",
+        },
+        {
+            icon:"fa-regular fa-pen-to-square",
+            title:"Certificate",
+            parag:"Lorem ipsum dolor sit, amet consectetur adipisicing elit.",
+        },
+        {
+            icon:"fa-solid fa-graduation-cap",
+            title:"Expertise",
+            parag:"Lorem ipsum dolor sit, amet consectetur adipisicing elit.",
+        },
+    ]
 })

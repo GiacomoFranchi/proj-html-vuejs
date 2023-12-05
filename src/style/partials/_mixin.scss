@@ -24,7 +24,22 @@
     color: rgb(5, 130, 131);
     border: 1px solid rgb(5, 130, 131);
     border-radius: 5px;
-    font-size: 1rem;
+    font-size: 1.3rem;
+    &:hover{
+        background-color: rgb(0, 166, 166);
+        color: white;
+        font-weight: bold;
+        border: none;
+    }
+}
+
+@mixin btn-more-dark{
+    padding: 0.8rem 1rem;
+    background-color: rgb(17, 17, 23);
+    color: white;
+    border: 1px solid rgb(5, 130, 131);
+    border-radius: 5px;
+    font-size: 1.3rem;
     &:hover{
         background-color: rgb(0, 166, 166);
         color: white;

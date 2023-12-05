@@ -1,16 +1,18 @@
 <script>
+import CompanyMain from './CompanyMain.vue';
 import ServicesMain from './ServicesMain.vue';
 export default {
     data() {
         return {};
     },
-    components:{ ServicesMain,}
+    components:{ ServicesMain, CompanyMain }
 }
 </script>
 
 <template>
     <main>
         <ServicesMain />
+        <CompanyMain />
     </main>
 </template>
 
