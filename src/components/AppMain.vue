@@ -1,11 +1,12 @@
 <script>
 import CompanyMain from './CompanyMain.vue';
 import ServicesMain from './ServicesMain.vue';
+import ProjectsMain from './ProjectsMain.vue';
 export default {
     data() {
         return {};
     },
-    components:{ ServicesMain, CompanyMain }
+    components:{ ServicesMain, CompanyMain, ProjectsMain }
 }
 </script>
 
@@ -13,6 +14,7 @@ export default {
     <main>
         <ServicesMain />
         <CompanyMain />
+        <ProjectsMain />
     </main>
 </template>
 

@@ -31,7 +31,7 @@ export const store = reactive({
             title:"Regulatory Risk",
             parag:"Lorem ipsum dolor sit, amet consectetur adipisicing elit.",
         },
-                ],
+            ],
     companys: [
         {
             icon:"fa-solid fa-award",
@@ -53,5 +53,37 @@ export const store = reactive({
             title:"Expertise",
             parag:"Lorem ipsum dolor sit, amet consectetur adipisicing elit.",
         },
+            ],
+    projects:[
+        {
+            title:"Academic professional program in social media",
+            parag:"Lorem ipsum dolor sit, amet consectetur adipisicing elit.",
+            img:"project-1.jpg",
+        },
+        {
+            title:"Student's speech at the annual meeting",
+            parag:"Lorem ipsum dolor sit, amet consectetur adipisicing elit.",
+            img:"project-2.jpg",
+        },
+        {
+            title:"International business trip in Shanghai",
+            parag:"Lorem ipsum dolor sit, amet consectetur adipisicing elit.",
+            img:"project-3.jpg",
+        },
+        {
+            title:"Technology workshop with education theme",
+            parag:"Lorem ipsum dolor sit, amet consectetur adipisicing elit.",
+            img:"project-4.jpg",
+        },
+        {
+            title:"Donation of clothes and food to the partner NGO",
+            parag:"Lorem ipsum dolor sit, amet consectetur adipisicing elit.",
+            img:"project-5.jpg",
+        },
+        {
+            title:"Confraternization of the procurement team",
+            parag:"Lorem ipsum dolor sit, amet consectetur adipisicing elit.",
+            img:"project-6.jpg",
+        }
     ]
 })
