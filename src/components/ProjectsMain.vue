@@ -40,6 +40,12 @@ import ListCardProjects from './ListCardProjects.vue';
     width: 80%;
     margin: 0 auto;
     text-align: center;
+    h5{
+        @include sub-title;
+    }
+    h2{
+        @include title;
+    }
     ul{
         width: 80%;
         margin: 0 auto;

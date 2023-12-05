@@ -85,5 +85,12 @@ export const store = reactive({
             parag:"Lorem ipsum dolor sit, amet consectetur adipisicing elit.",
             img:"project-6.jpg",
         }
-    ]
+    ],
+    numbers:[
+        {number:128, title:"Certifications"},
+        {number:230, title:"Employees"},
+        {number:517, title:"Costumers"},
+        {number:94, title:"Country Served"},
+    ],
+    partners:["logo-4.png","logo-5.png","logo-1.png","logo-2.png","logo-3.png","logo-4.png"]
 })

@@ -54,3 +54,16 @@
     border-radius: 5px;
     padding: 0.3rem 0.5rem;
 }
+
+@mixin sub-title{
+    color: rgb(0, 166, 166);
+    font-size: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+@mixin title{
+    font-size: 3rem;
+    font-weight: bold;
+    color: rgb(33, 51, 62);
+    margin-bottom: 1.5rem;
+}

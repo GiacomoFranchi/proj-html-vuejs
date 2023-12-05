@@ -17,7 +17,7 @@
     <div class="card-Pr">
         <img :src="getImgUrl(img)" alt="">
         <div class="visibl-title">
-            <h2 >{{ title }}</h2>
+            <h2 class="title">{{ title }}</h2>
             <p>{{ parag }}</p>
         </div>
 
@@ -44,13 +44,14 @@
         width: 100%;
         height: 100%;
         background-color: rgba(0, 0, 0, 0.4);
-        padding: 0.5rem;
-        h2{
+        .title{
             position: absolute;
-            font-size: 1.2rem;
+            font-size: 1.5rem;
             color: white;
             font-weight: bold;
             top:65%;
+            left: 50%;
+            transform: translateX(-50%);
         }
         p{
             display: none;
@@ -66,9 +67,9 @@
         left: 50%;
         transform: translateX(-50%);
     }
-    &:hover h2{
+    &:hover .title{
         top:45%;
-        font-size: 1rem;
+        font-size: 1.2rem;
 
     }
     &:hover .visibl-title{

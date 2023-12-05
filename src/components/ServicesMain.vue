@@ -40,15 +40,10 @@ import ListCard from './ListCard.vue';
     padding: 100px 0;
     margin-bottom: 3rem;
     h5{
-        color: rgb(0, 166, 166);
-        font-size: 1rem;
-        margin-bottom: 1.5rem;
+        @include sub-title;
     }
     h2{
-        font-size: 3rem;
-        font-weight: bold;
-        color: rgb(33, 51, 62);
-        margin-bottom: 1.5rem;
+        @include title;
         span{
             @include title-green;
         }

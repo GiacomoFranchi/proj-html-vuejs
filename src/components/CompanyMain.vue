@@ -16,7 +16,7 @@ import ListCard from './ListCard.vue';
         <div class="left-side">
             <div class="side">
                 <h5>ABOUT THE NETWORK</h5>
-                <h2><span>THE</span> COMPANY</h2>
+                <h2><span>The</span> Company</h2>
                 <p>For 12 years we have been providing audit and warranty, financial advice, risk advice and related services to select clients.</p>
                 <div class="row">
                     <div class="col" v-for=" company in store.companys">
@@ -41,27 +41,22 @@ import ListCard from './ListCard.vue';
 
 .comp{
    width: 100%;
-
    background-color: rgb(17, 17, 23);
    display: flex;
    .left-side{
         width: calc(100% / 2 - 1rem);
         margin-left: 1rem;
-        padding: 100px 0;
+        padding: 100px 10px 100px 0;
         @include flex(flex-start, flex-end, column);
         .side{
             width: 75%;
             
             h5{
-                color: rgb(0, 166, 166);
-                font-size: 1rem;
-                margin-bottom: 1.5rem;
+                @include sub-title;
             }
             h2{
-                font-size: 3rem;
-                font-weight: bold;
-                color:white;
-                margin-bottom: 1.5rem;
+                @include title;
+                color: white;
                 span{
                     @include title-green;
                     color: white;
