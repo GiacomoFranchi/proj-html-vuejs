@@ -42,14 +42,14 @@
         position: absolute;
         right: 2rem;
         display: inline-block;
-        height: 50px;
-        line-height: 50px;
-
         border: none;
         background-color: white;
         i{
             font-size: 1.5rem;
             color:rgba(5, 130, 131, 0.6);
+            height: 30px;
+            line-height: 45px;
+            padding: 0 0.7rem;
         }
         &:hover {
             color:rgb(5, 130, 131);

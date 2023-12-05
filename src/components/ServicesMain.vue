@@ -1,41 +1,11 @@
 <script>
+import { store } from '../store';
 import ListCard from './ListCard.vue';
 
     export default{
     data() {
         return {
-            services: [
-    {
-        icon:"fa-solid fa-network-wired",
-        title:"Audit & Assurance",
-        parag:"Lorem ipsum dolor sit, amet consectetur adipisicing elit.",
-    },
-    {
-        icon:"fa-solid fa-briefcase",
-        title:"Financial Advisor",
-        parag:"Lorem ipsum dolor sit, amet consectetur adipisicing elit.",
-    },
-    {
-        icon:"fa-solid fa-chart-simple",
-        title:"Analytics and M&A",
-        parag:"Lorem ipsum dolor sit, amet consectetur adipisicing elit.",
-    },
-    {
-        icon:"fa-solid fa-plane",
-        title:"Middle Marketing",
-        parag:"Lorem ipsum dolor sit, amet consectetur adipisicing elit.",
-    },
-    {
-        icon:"fa-solid fa-globe",
-        title:"Legal Consulting",
-        parag:"Lorem ipsum dolor sit, amet consectetur adipisicing elit.",
-    },
-    {
-        icon:"fa-solid fa-inbox",
-        title:"Regulatory Risk",
-        parag:"Lorem ipsum dolor sit, amet consectetur adipisicing elit.",
-    },
-            ],
+            store:store,
         };
     },
     components: { ListCard }
@@ -51,7 +21,7 @@ import ListCard from './ListCard.vue';
             <button>SEE ALL</button>
         </div>
         <div class="row">
-            <div class="col" v-for=" service in services">
+            <div class="col" v-for=" service in store.services">
                 <ListCard :icon="service.icon" :title="service.title" :parag="service.parag"/>
             </div>
         </div>
@@ -66,7 +36,8 @@ import ListCard from './ListCard.vue';
 section{
     width: 80%;
     margin: 0 auto;
-    padding-top: 100px;
+    padding: 100px 0;
+    margin-bottom: 3rem;
     h5{
         color: rgb(0, 166, 166);
         font-size: 1rem;

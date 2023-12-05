@@ -21,5 +21,6 @@ export default {
 main{
     width: 100%;
     background-color: #eef1ed ;
+    position: relative;
 }
 </style>
