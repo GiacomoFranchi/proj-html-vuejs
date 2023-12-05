@@ -1,9 +1,45 @@
 <script>
+import ListCard from './ListCard.vue';
+
     export default{
-        data(){
-            return{}
-        }
-    }
+    data() {
+        return {
+            services: [
+    {
+        icon:"fa-solid fa-network-wired",
+        title:"Audit & Assurance",
+        parag:"Lorem ipsum dolor sit, amet consectetur adipisicing elit.",
+    },
+    {
+        icon:"fa-solid fa-briefcase",
+        title:"Financial Advisor",
+        parag:"Lorem ipsum dolor sit, amet consectetur adipisicing elit.",
+    },
+    {
+        icon:"fa-solid fa-chart-simple",
+        title:"Analytics and M&A",
+        parag:"Lorem ipsum dolor sit, amet consectetur adipisicing elit.",
+    },
+    {
+        icon:"fa-solid fa-plane",
+        title:"Middle Marketing",
+        parag:"Lorem ipsum dolor sit, amet consectetur adipisicing elit.",
+    },
+    {
+        icon:"fa-solid fa-globe",
+        title:"Legal Consulting",
+        parag:"Lorem ipsum dolor sit, amet consectetur adipisicing elit.",
+    },
+    {
+        icon:"fa-solid fa-inbox",
+        title:"Regulatory Risk",
+        parag:"Lorem ipsum dolor sit, amet consectetur adipisicing elit.",
+    },
+            ],
+        };
+    },
+    components: { ListCard }
+}
 </script>
 
 <template>
@@ -13,6 +49,11 @@
         <div>
             <p>We are leaders in providing consultancy with a set of cutting-edge thecnologies and a team of experienced and renowned professionals. These are some options that you can hire.</p>
             <button>SEE ALL</button>
+        </div>
+        <div class="row">
+            <div class="col" v-for=" service in services">
+                <ListCard :icon="service.icon" :title="service.title" :parag="service.parag"/>
+            </div>
         </div>
     </section>
 
@@ -51,6 +92,17 @@ section{
         }
         button{
             @include btn-touch;
+        }
+    }
+    .row{
+        width: 100%;
+        @include flex(space-between, flex-start, row);
+        flex-wrap: wrap;
+        .col{
+            width: calc(100% / 3 - 2rem);
+            margin: 1rem;
+            background-color: white;
+            border-radius: 5px;
         }
     }
 }
