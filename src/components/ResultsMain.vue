@@ -68,13 +68,13 @@ import { store } from '../store';
             @include flex(space-evenly, center, column);
             h3{
                 margin-bottom: 1rem;
-                font-size: 3rem;
+                font-size: 2.5rem;
                 color:rgb(5, 130, 131);
             }
             h4{
                 color: white;
                 font-weight: bold;
-                font-size: 2rem;
+                font-size: 1.5rem;
             }
         }
     }

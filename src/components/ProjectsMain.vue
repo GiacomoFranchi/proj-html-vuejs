@@ -53,7 +53,7 @@ import ListCardProjects from './ListCardProjects.vue';
         list-style: none;
         margin-bottom: 2rem;
         li{
-            font-size: 1.5rem;
+            font-size: 1.2rem;
             padding: 0.5rem 0.8rem;
             border-radius: 5px;
             color: gray;
