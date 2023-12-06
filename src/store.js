@@ -1,5 +1,10 @@
 import {reactive} from "vue"
 export const store = reactive({
+    contacts:{
+        phone:"+1(305)1234-5678",
+        mail:"hello@example.com",
+        adress:"Main Avenue, 987"
+    },
     services: [
         {
             icon:"fa-solid fa-network-wired",
@@ -92,5 +97,12 @@ export const store = reactive({
         {number:517, title:"Costumers"},
         {number:94, title:"Country Served"},
     ],
-    partners:["logo-4.png","logo-5.png","logo-1.png","logo-2.png","logo-3.png","logo-4.png"]
+    partners:["logo-4.png","logo-5.png","logo-1.png","logo-2.png","logo-3.png","logo-4.png"],
+    inputs:{
+        name:"",
+        email:"",
+        phone:"",
+        info:"",
+        message:"",
+        }
 })

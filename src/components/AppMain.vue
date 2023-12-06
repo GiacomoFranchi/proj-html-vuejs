@@ -3,11 +3,12 @@ import CompanyMain from './CompanyMain.vue';
 import ServicesMain from './ServicesMain.vue';
 import ProjectsMain from './ProjectsMain.vue';
 import ResultsMain from './ResultsMain.vue';
+import TouchMain from './TouchMain.vue';
 export default {
     data() {
         return {};
     },
-    components:{ ServicesMain, CompanyMain, ProjectsMain, ResultsMain }
+    components:{ ServicesMain, CompanyMain, ProjectsMain, ResultsMain, TouchMain }
 }
 </script>
 
@@ -17,6 +18,7 @@ export default {
         <CompanyMain />
         <ProjectsMain />
         <ResultsMain />
+        <TouchMain />
     </main>
 </template>
 

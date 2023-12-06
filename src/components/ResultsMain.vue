@@ -53,7 +53,7 @@ import { store } from '../store';
         @include title;
         text-align: center;
         color: white;
-        margin-bottom: 3rem;
+        margin-bottom: 80px;
         span{
             @include title-green;
             color: white;
@@ -89,7 +89,7 @@ import { store } from '../store';
             list-style: none;
             @include flex(space-between, center, row);
         li{
-            width: calc(100% / 6 - 5rem);
+            width: calc(100% / 6 - 6rem);
             img{
                 width: 100%;
                 filter: brightness(4);
