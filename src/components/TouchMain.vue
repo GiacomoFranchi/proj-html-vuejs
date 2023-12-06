@@ -11,7 +11,7 @@ import Input from './Input.vue';
     components:{
     ContactsList,
     Input
-}
+},
 }
 </script>
 

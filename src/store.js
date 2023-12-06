@@ -104,5 +104,18 @@ export const store = reactive({
         phone:"",
         info:"",
         message:"",
-        }
+        },
+    incomeReq:[{
+        name:"",
+        email:"",
+        phone:"",
+        info: "",
+        message:"",
+    }],
+    links:[
+        {id:"About", listOpt:["The Company", "Istitutional", "Social & Events", "Innovation", "Enviroment", "Technology"]},
+        {id:"Services", listOpt:["Audit & Assurance", "Financialy Advisor", "Analytics M&A", "Middle Marketing", "Legal Consulting", "Regulatory Risk"]},
+        {id:"Support", listOpt:["Responsability", "Terms of Use", "About Cookies", "Privacy Policy", "Accessibility", "Information"]},
+           
+    ]
 })

@@ -15,13 +15,19 @@ export default {
 </script>
 
 <template>
-    <TopHeader :phone="store.services.phone" :mail="store.services.mail"/>
-    <NavHeader />
-    <HeroHeader />
+    <section>
+        <TopHeader :phone="store.services.phone" :mail="store.services.mail"/>
+        <NavHeader />
+        <HeroHeader />
+    </section>
 </template>
 
 <style lang="scss" scoped>
 @use "../style/partials/mixin" as *;
 @use "../style/partials/variables" as *;
 
+section{
+    background-image: url(../assets/Shiny.svg);
+    background-size: cover;
+}
 </style>

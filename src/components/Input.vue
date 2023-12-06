@@ -5,8 +5,22 @@ import { store } from '../store';
             return{
                 store
             }
+        },
+    methods:{
+        getInput(){
+            this.store.incomeReq.push(this.store.inputs.name) 
+            this.store.inputs.name = "",
+            this.store.incomeReq.email= (this.store.inputs.email) 
+            this.store.inputs.email = "",
+            this.store.incomeReq.phone= (this.store.inputs.phone) 
+            this.store.inputs.phone = "",
+            this.store.incomeReq.info= (this.store.inputs.info) 
+            this.store.inputs.info = "",
+            this.store.incomeReq.message= (this.store.inputs.message) 
+            this.store.inputs.message = ""
         }
     }
+}
 </script>
 
 <template>
@@ -23,7 +37,7 @@ import { store } from '../store';
     </section>
     <div>
         <textarea id="message" name="message" placeholder="Message.." rows="4" cols="50" v-model.trim="store.inputs.message"></textarea>
-        <button>SEND</button>
+        <button @click="getInput">SEND</button>
     </div>
 
 </template>
@@ -56,6 +70,8 @@ div{
     textarea{
     width:100%;
     margin: 0 auto;
+    font-size: 1rem;
+    padding: 0.5rem;
     }
     button{
         @include btn-touch;
