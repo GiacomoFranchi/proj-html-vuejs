@@ -69,7 +69,7 @@ import { store } from '../store';
             h3{
                 margin-bottom: 1rem;
                 font-size: 2.5rem;
-                color:rgb(5, 130, 131);
+                color:$color-green;
             }
             h4{
                 color: white;
@@ -82,7 +82,7 @@ import { store } from '../store';
 .partner{
         width: 100%;
         padding: 50px 0;
-        background-color: rgb(17, 17, 23);
+        background-color: $colorComp;
         ul{
             width: 80%;
             margin: 0 auto;

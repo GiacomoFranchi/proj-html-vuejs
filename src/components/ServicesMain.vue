@@ -72,16 +72,16 @@ import ListCard from './ListCard.vue';
             border-radius: 5px;
             position: relative;
             &:hover .i-x{
-                    color:rgb(5, 130, 131);
+                    color:$color-green;
                     border-radius: 50%;
-                    background-color:rgba(5, 130, 131, 0.6);
+                    background-color: $green-transl;
                 }
             .i-x{
                 position: absolute;
                 right: 2rem;
                 top: 2rem;
                 font-size: 1.5rem;
-                color:rgba(5, 130, 131, 0.6);
+                color:$green-transl;
                 height: 45px;
                 line-height: 45px;
                 padding: 0 0.7rem;
@@ -93,7 +93,7 @@ import ListCard from './ListCard.vue';
                 div{
                     flex-direction: column;
                     i{
-                    color:rgb(5, 130, 131);
+                    color:$color-green;
                     font-size: 3rem;
                     margin-bottom: 1rem;
                 }

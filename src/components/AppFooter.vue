@@ -26,7 +26,7 @@ export default {
 @use "../style/partials/variables" as *;
 
 footer{
-    background-color: rgb(13, 13, 17);
+    background-color:$bg-color-footer;
     color: white;
     font-size: 1.2rem;
     padding: 1.5rem;
@@ -46,7 +46,7 @@ footer{
         background-color: rgba($color: #ffffff, $alpha: 0.1);
         border-radius: 50%;
         &:hover {
-        color:rgb(5, 130, 131);
+        color:$color-green;
         border-radius: 50%;
         background-color:rgba(5, 130, 131, 0.6);
         }

@@ -7,25 +7,25 @@
 
 @mixin btn-touch{
     padding: 0.8rem 1rem;
-    background-color:rgb(5, 130, 131) ;
+    background-color:$color-green;
     color: white;
     border: none;
     border-radius: 5px;
     font-size: 1rem;
     &:hover{
-        background-color: rgb(0, 166, 166);
+        background-color: $green-drk;
     }
 }
 
 @mixin btn-more{
     padding: 0.8rem 1rem;
     background-color:white ;
-    color: rgb(5, 130, 131);
-    border: 1px solid rgb(5, 130, 131);
+    color: $color-green;
+    border: 1px solid $color-green;
     border-radius: 5px;
     font-size: 1rem;
     &:hover{
-        background-color: rgb(0, 166, 166);
+        background-color:$green-drk;
         color: white;
         border: none;
     }
@@ -33,13 +33,13 @@
 
 @mixin btn-more-dark{
     padding: 0.8rem 1rem;
-    background-color: rgb(17, 17, 23);
+    background-color: $colorComp;
     color: white;
-    border: 1px solid rgb(5, 130, 131);
+    border: 1px solid $color-green;
     border-radius: 5px;
     font-size: 1rem;
     &:hover{
-        background-color: rgb(0, 166, 166);
+        background-color: $green-drk;
         color: white;
         border: none;
     }
@@ -47,7 +47,7 @@
 
 @mixin title-green{
     background-color: rgba(5, 130, 131, 0.3);
-    color:rgb(5, 130, 131) ;
+    color:$color-green ;
     border-radius: 5px;
     padding: 0.3rem 0.5rem;
 }
@@ -61,6 +61,6 @@
 @mixin title{
     font-size: 3rem;
     font-weight: bold;
-    color: rgb(33, 51, 62);
+    color: $bg-color-HTop;
     margin-bottom: 1.5rem;
 }

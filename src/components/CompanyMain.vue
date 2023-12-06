@@ -48,7 +48,7 @@ import ListCard from './ListCard.vue';
 .comp{
     position: relative;
    width: 100%;
-   background-color: rgb(17, 17, 23);
+   background-color: $colorComp;
    display: flex;
    .left-side{
         width: calc(100% / 2 - 1rem);
@@ -87,7 +87,7 @@ import ListCard from './ListCard.vue';
                             flex-direction: row;
                             gap: 0.5rem;
                             i{
-                            color:rgb(5, 130, 131);
+                            color:$color-green;
                             font-size: 1.8rem;
                             margin-bottom: 1rem;
                             position: relative;
