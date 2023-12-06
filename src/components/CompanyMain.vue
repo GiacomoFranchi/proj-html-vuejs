@@ -32,6 +32,12 @@ import ListCard from './ListCard.vue';
         <div class="rigth-side">
             <img src="../assets/img/about-4.jpg" alt="About img">
         </div>
+        <div class="d top">
+            <img src="../assets/img/bullets.png" alt="">
+        </div>
+        <div class="d bottom">
+            <img src="../assets/img/bullets.png" alt="">
+        </div>
     </section>
 </template>
 
@@ -40,6 +46,7 @@ import ListCard from './ListCard.vue';
 @use "../style/partials/variables" as *;
 
 .comp{
+    position: relative;
    width: 100%;
    background-color: rgb(17, 17, 23);
    display: flex;
@@ -114,6 +121,25 @@ import ListCard from './ListCard.vue';
         width: 100%;
         height: 100%;
     }
+   }
+   .d{
+    position: absolute;
+    width: 100px;
+    height: 60px;
+    img{
+        width: 100%;
+        height: 100%;
+    }
+   }
+   .d.top{
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -50%);
+   }
+   .d.bottom{
+    left: 50%;
+    bottom: 0;
+    transform: translate(-50%, +50%);
    }
 }
 
