@@ -21,9 +21,9 @@ export default {
         </section>
         <section class="col-dx">
             <ul>
-                <li v-for="link in links"><a href="">{{link.id}}</a></li>
+                <li v-for="link in links" ><a :href="`#${link.id}`">{{link.id}}</a></li>
             </ul>
-            <button id="btn-touch">GET IN TOUCH</button>
+            <button id="btn-touch"><a :href="`#touch`"> GET IN TOUCH</a></button>
         </section>
     </header>
 </template>
@@ -60,6 +60,10 @@ header{
         }
         button{
             @include btn-touch;
+            a{
+                text-decoration: none;
+                color: white;
+            }
         }
     }
 }

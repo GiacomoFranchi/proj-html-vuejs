@@ -20,7 +20,7 @@ import ContactsList from './ContactsList.vue';
             <ul>
                 <ContactsList :phone="store.contacts.phone" :mail="store.contacts.mail" :adress="store.contacts.adress"/>
             </ul>
-            <button>GET IN TOUCH</button>
+            <button><a :href="`#touch`"> GET IN TOUCH</a></button>
         </section>
         <div class="row">
             <div class="col" v-for="link in store.links">
@@ -70,6 +70,10 @@ import ContactsList from './ContactsList.vue';
         }
         button{
             @include btn-more-dark;
+            a{
+                text-decoration: none;
+                color: white;
+            }
         }
     }
     .row{

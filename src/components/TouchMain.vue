@@ -16,7 +16,7 @@ import Input from './Input.vue';
 </script>
 
 <template>
-    <div class="touch">
+    <div class="touch" id="touch">
         <div class="left">
             <h5>SEND A MESSAGE</h5>
             <h2>Get in <span>Touch</span></h2>

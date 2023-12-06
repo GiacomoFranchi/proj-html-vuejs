@@ -16,7 +16,7 @@ import { store } from '../store';
 </script>
 
 <template>
-    <section class="results">
+    <section class="results" id="RESULTS">
         <h5>WHAT ARE WE DOING</h5>
         <h2><span>Results</span> in Numbers</h2>
         <div>

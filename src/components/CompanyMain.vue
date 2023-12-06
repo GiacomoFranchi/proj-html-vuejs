@@ -12,7 +12,7 @@ import ListCard from './ListCard.vue';
 }
 </script>
 <template>
-    <section class="comp">
+    <section class="comp" id="ABOUT">
         <div class="left-side">
             <div class="side">
                 <h5>ABOUT THE NETWORK</h5>
@@ -24,7 +24,7 @@ import ListCard from './ListCard.vue';
                     </div>
                 </div>
                 <div class="btn-zone">
-                    <button id="btn-touch">GET IN TOUCH</button>
+                    <button id="btn-touch"><a :href="`#touch`"> GET IN TOUCH</a></button>
                     <button id="btn-more">READ MORE</button>
                 </div>
             </div>
@@ -107,6 +107,10 @@ import ListCard from './ListCard.vue';
                 #btn-touch{
                     @include  btn-touch;
                     margin-right: 2rem;
+                    a{
+                        color: white;
+                        text-decoration: none;
+                    }
                 }
                 #btn-more{
                     @include btn-more-dark;

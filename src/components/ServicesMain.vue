@@ -13,7 +13,7 @@ import ListCard from './ListCard.vue';
 </script>
 
 <template>
-    <section class="serv">
+    <section class="serv" id="SERVICES">
         <h5>OUR BUSINESS AREAS</h5>
         <h2>Excellence in <span>Services</span></h2>
         <div>

@@ -14,7 +14,7 @@ export default {
 
 <template>
     <main>
-        <ServicesMain />
+        <ServicesMain/>
         <CompanyMain />
         <ProjectsMain />
         <ResultsMain />

@@ -17,7 +17,7 @@ export default {
             <p>Enjoy the low price. We are tracking any intention of piracy.</p>
             <p>&copy; 2020 NEXGEN in Proudly Powered by <span style="color:rgb(5, 130, 131);">Codings</span>.</p>
         </section>
-        <i class="fa-solid fa-arrow-up"></i>
+        <a :href="`#hero`"><i class="fa-solid fa-arrow-up"></i></a>
     </footer>
 </template>
 

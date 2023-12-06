@@ -7,12 +7,12 @@ export default {
 </script>
 
 <template>
-<section class="hero">
+<section class="hero" id="hero">
     <div>
         <h2>Ready <span>Team</span></h2>
         <p>No matter what your company needs, we will be ready to assist you in the best possible way.</p>
         <div>
-            <button id="btn-touch">GET IN TOUCH</button>
+            <button id="btn-touch"><a :href="`#touch`"> GET IN TOUCH</a></button>
             <button id="btn-more">READ MORE</button>
         </div>
     </div>
@@ -56,6 +56,10 @@ export default {
             gap: 1.5rem;
             #btn-touch{
                 @include btn-touch;
+                a{
+                    text-decoration: none;
+                    color: white
+                }
             }
             #btn-more{
                 @include btn-more; 
