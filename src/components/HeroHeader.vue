@@ -38,7 +38,7 @@ export default {
         h2{
             font-size: 4rem;
             margin-bottom: 1rem;
-            color:$bg-color-HTop;
+            color:$bg-color-top;
             span{
                 @include title-green;
             }

@@ -43,7 +43,7 @@ export default {
 
 header{
     width: 100%;
-    background-color: $bg-color-HTop;
+    background-color: $bg-color-top;
     section{
         width:80%;
         margin: 0 auto;
